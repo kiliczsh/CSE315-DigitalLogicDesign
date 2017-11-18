@@ -77,7 +77,12 @@ public static String lineAssembler(List<String> lines){
             break;
         case "ADDI":
             toFile=toFile.concat("0001");
-            
+        		destinationRegister=""+Integer.parseInt(Integer.toBinaryString(Integer.parseInt(seperateRegisterAdress(elementArray[0]))));
+        		destinationRegister=getBits(destinationRegister);
+        	toFile=toFile.concat(destinationRegister);
+        		sourceRegister1=""+Integer.parseInt(Integer.toBinaryString(Integer.parseInt(seperateRegisterAdress(elementArray[1]))));
+        		sourceRegister1=getBits(sourceRegister1);
+        	toFile=toFile.concat(sourceRegister1);
             
             
             
@@ -85,20 +90,25 @@ public static String lineAssembler(List<String> lines){
             break;
         case "AND":
             toFile=toFile.concat("0010");
-        	destinationRegister=""+Integer.parseInt(Integer.toBinaryString(Integer.parseInt(seperateRegisterAdress(elementArray[0]))));
-        	destinationRegister=getBits(destinationRegister);
-        toFile=toFile.concat(destinationRegister);
-        	sourceRegister1=""+Integer.parseInt(Integer.toBinaryString(Integer.parseInt(seperateRegisterAdress(elementArray[1]))));
-        	sourceRegister1=getBits(sourceRegister1);
-        toFile=toFile.concat(sourceRegister1);
-        	sourceRegister2=""+Integer.parseInt(Integer.toBinaryString(Integer.parseInt(seperateRegisterAdress(elementArray[2]))));
-        	sourceRegister2=getBits(sourceRegister2);
-        toFile=toFile.concat(sourceRegister2);
-        toFile=toFile.concat(""+(int)(Math.random() * 1)+(int)(Math.random() * 1)+(int)(Math.random() * 1)+(int)(Math.random() * 1));
+        		destinationRegister=""+Integer.parseInt(Integer.toBinaryString(Integer.parseInt(seperateRegisterAdress(elementArray[0]))));
+        		destinationRegister=getBits(destinationRegister);
+        	toFile=toFile.concat(destinationRegister);
+        		sourceRegister1=""+Integer.parseInt(Integer.toBinaryString(Integer.parseInt(seperateRegisterAdress(elementArray[1]))));
+        		sourceRegister1=getBits(sourceRegister1);
+        	toFile=toFile.concat(sourceRegister1);
+        		sourceRegister2=""+Integer.parseInt(Integer.toBinaryString(Integer.parseInt(seperateRegisterAdress(elementArray[2]))));
+        		sourceRegister2=getBits(sourceRegister2);
+        	toFile=toFile.concat(sourceRegister2);
+        	toFile=toFile.concat(""+(int)(Math.random() * 1)+(int)(Math.random() * 1)+(int)(Math.random() * 1)+(int)(Math.random() * 1));
             break;
         case "ANDI":
             toFile=toFile.concat("0011");
-
+    			destinationRegister=""+Integer.parseInt(Integer.toBinaryString(Integer.parseInt(seperateRegisterAdress(elementArray[0]))));
+    			destinationRegister=getBits(destinationRegister);
+    		toFile=toFile.concat(destinationRegister);
+    			sourceRegister1=""+Integer.parseInt(Integer.toBinaryString(Integer.parseInt(seperateRegisterAdress(elementArray[1]))));
+    			sourceRegister1=getBits(sourceRegister1);
+    		toFile=toFile.concat(sourceRegister1);
             break;
         case "OR":
             toFile=toFile.concat("0100");
@@ -115,7 +125,13 @@ public static String lineAssembler(List<String> lines){
             break;
         case "ORI":
             toFile=toFile.concat("0101");
-
+    			destinationRegister=""+Integer.parseInt(Integer.toBinaryString(Integer.parseInt(seperateRegisterAdress(elementArray[0]))));
+    			destinationRegister=getBits(destinationRegister);
+    		toFile=toFile.concat(destinationRegister);
+    			sourceRegister1=""+Integer.parseInt(Integer.toBinaryString(Integer.parseInt(seperateRegisterAdress(elementArray[1]))));
+    			sourceRegister1=getBits(sourceRegister1);
+    		toFile=toFile.concat(sourceRegister1);
+    		
             break;
         case "XOR":
         	toFile = toFile.concat("0110");
@@ -132,7 +148,13 @@ public static String lineAssembler(List<String> lines){
         	break;
         case "XORI":
         	toFile = toFile.concat("0111");
-        	
+    			destinationRegister=""+Integer.parseInt(Integer.toBinaryString(Integer.parseInt(seperateRegisterAdress(elementArray[0]))));
+    			destinationRegister=getBits(destinationRegister);
+    		toFile=toFile.concat(destinationRegister);
+    			sourceRegister1=""+Integer.parseInt(Integer.toBinaryString(Integer.parseInt(seperateRegisterAdress(elementArray[1]))));
+    			sourceRegister1=getBits(sourceRegister1);
+    		toFile=toFile.concat(sourceRegister1);       	
+    		
         	break;	
         case "LD":
             toFile = toFile.concat("1001");
