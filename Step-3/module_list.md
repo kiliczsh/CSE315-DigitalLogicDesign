@@ -1,6 +1,6 @@
-##MODULE LIST
+## MODULE LIST
 
-#DONE 
+# DONE 
 
 D_Latch
 D_Flip_Flop
@@ -21,7 +21,7 @@ D_Flip_Flop
 20BitComparator
 
 
-#TODO
+# TODO
 
 ControlUnit
 RegisterFile
