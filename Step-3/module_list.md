@@ -1,4 +1,6 @@
-MODULE LIST
+##MODULE LIST
+
+#DONE 
 
 D_Latch
 D_Flip_Flop
@@ -17,6 +19,10 @@ D_Flip_Flop
 4BitComparator
 8BitComparator
 20BitComparator
+
+
+#TODO
+
 ControlUnit
 RegisterFile
 AritmaticLogicUnit
