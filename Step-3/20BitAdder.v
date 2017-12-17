@@ -12,11 +12,11 @@ module Full_Adder( output c_out, s, input a, b, c_in );
  
 endmodule // Full_Adder
  
-module Full_Adder20( output [19:0] s, input [19:0] a, b, input c_in );
+module BitAdder20( output [19:0] s, input [19:0] a, b );
  
   wire [20:0] c;
  
-  Full_Adder adder00 ( c[1], s[0], a[0], b[0], c_in );
+  Half_Adder adder00 ( c[1], s[0], a[0], b[0] );
   Full_Adder adder01 ( c[2], s[1], a[1], b[1], c[1] );
   Full_Adder adder02 ( c[3], s[2], a[2], b[2], c[2] );
   Full_Adder adder03 ( c[4], s[3], a[3], b[3], c[3] );
@@ -40,3 +40,4 @@ module Full_Adder20( output [19:0] s, input [19:0] a, b, input c_in );
   assign s[19] = c[19];
  
 endmodule // Full_Adder20
+

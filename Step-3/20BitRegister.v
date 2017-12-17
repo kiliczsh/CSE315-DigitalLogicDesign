@@ -22,7 +22,7 @@ module DFF(out,data, reset,clk);
 	end
 endmodule //End Of Module dflipflop
 
-module 20BitRegister(PCOut,PCin,reset,clk);  
+module BitRegister20(PCOut,PCin,reset,clk);  
  output [19:0] PCOut;  
  input [19:0] PCin;  
  input reset,clk;  

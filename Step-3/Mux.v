@@ -1,19 +1,22 @@
-module mux2to1(a,b,sel,out);
-	input a,b,sel;
-	output out;
-	tri out;
-	bufif1 (out,a,sel);
-	bufif0 (out,b,sel);
+module mux2to1(out, in0, in1, sel);
+	input [19:0] in0;
+	input [19:0] in1;
+	input sel;
+	output [19:0] out;
+	assign out = (sel==1'b0) ? in0 : in1;
 endmodule
 
-module mux4to1(a,sel,out);
-	input [4:0] a;
+module mux4to1(out, in0, in1, in2, in3, sel);
+	input [19:0] in0;
+	input [19:0] in1;
+	input [19:0] in2;
+	input [19:0] in3;
 	input [1:0] sel;
-	output out;
+	output [19:0] out;
 
-	wire mux[2:0];
-
-	mux2to1 m1 (a[3],a[2],sel[0],mux_1),
-	        m2 (a[1],a[4],sel[0],mux_2),
-	        m3 (mux_1,mux_2,sel[1],out);
+	assign out = (sel==2'b00) ? in0 : 
+		(sel==2'b01) ? in1 : 
+		(sel==2'b10) ? in2 :
+		in3;
 endmodule
+

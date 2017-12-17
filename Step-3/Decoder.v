@@ -1,24 +1,24 @@
-module decoder(D,a,E);
-output [15:0]D;    //16-bit output
-input [3:0]a;
-input E;        //4-bit input with E as enable
+module decoder(outputDec,inputDec,E);
+output [15:0]outputDec;    //16-bit output
+input [3:0]inputDec;
+input E;        //4-bit input with E inputDecs eninputDecble
 
 	assign 
-		D[0] = ~a[3]&~a[2]&~a[1]&~a[0]&E,  //assignment of desired value to the 16-bit output
-		D[1] = ~a[3]&~a[2]&~a[1]&a[0]&E,
-		D[2] = ~a[3]&~a[2]&a[1]&~a[0]&E,
-		D[3] = ~a[3]&~a[2]&a[1]&a[0]&E,
-		D[4] = ~a[3]&a[2]&~a[1]&~a[0]&E,
-		D[5] = ~a[3]&a[2]&~a[1]&a[0]&E,
-		D[6] = ~a[3]&a[2]&a[1]&~a[0]&E,
-		D[7] = ~a[3]&a[2]&a[1]&a[0]&E,
-		D[8] = a[3]&~a[2]&~a[1]&~a[0]&E,
-		D[9] = a[3]&~a[2]&~a[1]&a[0]&E,
-		D[10]= a[3]&~a[2]&a[1]&~a[0]&E,
-		D[11]= a[3]&~a[2]&a[1]&a[0]&E,
-		D[12]= a[3]&a[2]&~a[1]&~a[0]&E,
-		D[13]= a[3]&a[2]&~a[1]&a[0]&E,
-		D[14]= a[3]&a[2]&a[1]&~a[0]&E,
-		D[15]= a[3]&a[2]&a[1]&a[0]&E;
+		outputDec[0] = ~inputDec[3]&~inputDec[2]&~inputDec[1]&~inputDec[0]&E,  //inputDecssignment of outputDecesireoutputDec vinputDeclue to the 16-bit output
+		outputDec[1] = ~inputDec[3]&~inputDec[2]&~inputDec[1]&inputDec[0]&E,
+		outputDec[2] = ~inputDec[3]&~inputDec[2]&inputDec[1]&~inputDec[0]&E,
+		outputDec[3] = ~inputDec[3]&~inputDec[2]&inputDec[1]&inputDec[0]&E,
+		outputDec[4] = ~inputDec[3]&inputDec[2]&~inputDec[1]&~inputDec[0]&E,
+		outputDec[5] = ~inputDec[3]&inputDec[2]&~inputDec[1]&inputDec[0]&E,
+		outputDec[6] = ~inputDec[3]&inputDec[2]&inputDec[1]&~inputDec[0]&E,
+		outputDec[7] = ~inputDec[3]&inputDec[2]&inputDec[1]&inputDec[0]&E,
+		outputDec[8] = inputDec[3]&~inputDec[2]&~inputDec[1]&~inputDec[0]&E,
+		outputDec[9] = inputDec[3]&~inputDec[2]&~inputDec[1]&inputDec[0]&E,
+		outputDec[10]= inputDec[3]&~inputDec[2]&inputDec[1]&~inputDec[0]&E,
+		outputDec[11]= inputDec[3]&~inputDec[2]&inputDec[1]&inputDec[0]&E,
+		outputDec[12]= inputDec[3]&inputDec[2]&~inputDec[1]&~inputDec[0]&E,
+		outputDec[13]= inputDec[3]&inputDec[2]&~inputDec[1]&inputDec[0]&E,
+		outputDec[14]= inputDec[3]&inputDec[2]&inputDec[1]&~inputDec[0]&E,
+		outputDec[15]= inputDec[3]&inputDec[2]&inputDec[1]&inputDec[0]&E;
 	   
 endmodule

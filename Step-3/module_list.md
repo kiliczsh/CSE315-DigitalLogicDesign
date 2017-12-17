@@ -19,11 +19,11 @@ D_Flip_Flop
 4BitComparator
 8BitComparator
 20BitComparator
+AritmaticLogicUnit
 
 
 #TODO
 
 ControlUnit
 RegisterFile
-AritmaticLogicUnit
 CPU
