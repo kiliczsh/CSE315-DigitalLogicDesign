@@ -1,6 +1,6 @@
-##MODULE LIST
+## MODULE LIST
 
-#DONE 
+# DONE 
 
 D_Latch
 D_Flip_Flop
@@ -22,8 +22,13 @@ D_Flip_Flop
 AritmaticLogicUnit
 
 
-#TODO
+# TODO
 
 ControlUnit
 RegisterFile
+<<<<<<< HEAD
 CPU
+=======
+AritmaticLogicUnit
+CPU
+>>>>>>> 2298d7b62d87c484524a443abc7a96bdad16632a
