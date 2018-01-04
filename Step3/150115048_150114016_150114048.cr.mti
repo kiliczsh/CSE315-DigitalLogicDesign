@@ -1,0 +1,84 @@
+C:/Users/muham/Desktop/ProjeDigital/Step3/RegisterFile.v {1 {vlog -work work C:/Users/muham/Desktop/ProjeDigital/Step3/RegisterFile.v
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module RegisterFile
+
+Top level modules:
+	RegisterFile
+
+} {} {}} C:/Users/muham/Desktop/ProjeDigital/Step3/Datapath_unit.v {1 {vlog -work work C:/Users/muham/Desktop/ProjeDigital/Step3/Datapath_unit.v
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module Datapath_Unit
+
+Top level modules:
+	Datapath_Unit
+
+} {} {}} C:/Users/muham/Desktop/ProjeDigital/Step3/dflipflop.v {1 {vlog -work work C:/Users/muham/Desktop/ProjeDigital/Step3/dflipflop.v
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module d_latch
+
+Top level modules:
+	d_latch
+
+} {} {}} C:/Users/muham/Desktop/ProjeDigital/Step3/Parameter.v {1 {vlog -work work C:/Users/muham/Desktop/ProjeDigital/Step3/Parameter.v
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+
+} {} {}} C:/Users/muham/Desktop/ProjeDigital/Step3/ControlUnit.v {1 {vlog -work work C:/Users/muham/Desktop/ProjeDigital/Step3/ControlUnit.v
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module Control_Unit
+
+Top level modules:
+	Control_Unit
+
+} {} {}} C:/Users/muham/Desktop/ProjeDigital/Step3/instrunctionmemory.v {0 {vlog -work work C:/Users/muham/Desktop/ProjeDigital/Step3/instrunctionmemory.v
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+** Error: C:/Users/muham/Desktop/ProjeDigital/Step3/instrunctionmemory.v(1): Cannot open `include file "Parameter.v".
+-- Compiling module Instruction_Memory
+** Error: C:/Users/muham/Desktop/ProjeDigital/Step3/instrunctionmemory.v(11): (vlog-2163) Macro `col is undefined.
+
+** Error: C:/Users/muham/Desktop/ProjeDigital/Step3/instrunctionmemory.v(11): (vlog-2163) Macro `row_i is undefined.
+
+
+} {3.0 4.0 5.0 6.0 7.0 8.0} {}} C:/Users/muham/Desktop/ProjeDigital/Step3/DataMemory.v {1 {vlog -work work C:/Users/muham/Desktop/ProjeDigital/Step3/DataMemory.v
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module RAM
+
+Top level modules:
+	RAM
+
+} {} {}} C:/Users/muham/Desktop/ProjeDigital/Step3/ROM.v {1 {vlog -work work C:/Users/muham/Desktop/ProjeDigital/Step3/ROM.v
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module ROM
+
+Top level modules:
+	ROM
+
+} {} {}} C:/Users/muham/Desktop/ProjeDigital/Step3/d_latch.v {1 {vlog -work work C:/Users/muham/Desktop/ProjeDigital/Step3/d_latch.v
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module d_latch
+
+Top level modules:
+	d_latch
+
+} {} {}} C:/Users/muham/Desktop/ProjeDigital/Step3/ArithmeticLogicUnit.v {1 {vlog -work work C:/Users/muham/Desktop/ProjeDigital/Step3/ArithmeticLogicUnit.v
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module ArithmeticLogicUnit
+
+Top level modules:
+	ArithmeticLogicUnit
+
+} {} {}} C:/Users/muham/Desktop/ProjeDigital/Step3/CPU.v {1 {vlog -work work C:/Users/muham/Desktop/ProjeDigital/Step3/CPU.v
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module CPU
+
+Top level modules:
+	CPU
+
+} {} {}} C:/Users/muham/Desktop/ProjeDigital/Step3/InstructionMemory.v {0 {vlog -work work C:/Users/muham/Desktop/ProjeDigital/Step3/InstructionMemory.v
+Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
+-- Compiling module Instruction_Memory
+** Error: C:/Users/muham/Desktop/ProjeDigital/Step3/InstructionMemory.v(6): (vlog-2163) Macro `col is undefined.
+
+** Error: C:/Users/muham/Desktop/ProjeDigital/Step3/InstructionMemory.v(6): (vlog-2163) Macro `row_i is undefined.
+
+
+} {4.0 5.0 6.0 7.0} {}}
